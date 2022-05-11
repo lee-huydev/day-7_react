@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {useState, useEffect} from 'react'
+import Todos from './homeWork/Ex1';
+import Posts from './homeWork/Ex2';
+import Users from './homeWork/Ex3';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Todos />
+      <Posts />
+      <Users />
+    </>
+  )
 }
 
 export default App;
